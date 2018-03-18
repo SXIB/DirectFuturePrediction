@@ -20,13 +20,15 @@ If you use this code or the provided environments in your research, please cite 
 - numpy
 - tensorflow
 - OpenCV python bindings
+- scipy
+- matplotlib
 - (optionally, cuda and cudnn)
 
 ## Tested with: 
-- Ubuntu 14.04
-- python 3.4
-- tensorflow 1.0
-- ViZDoom master branch commit ed25f236ac93fbe7f667d64fe48d733506ce51f4
+- Debian 9.4
+- python 3.5
+- tensorflow 1.6
+- ViZDoom 1.1.5
 
 ## Running the code:
 - Adjust ViZDoom path in doom_simulator.py
