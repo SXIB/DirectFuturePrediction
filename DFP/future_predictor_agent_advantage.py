@@ -36,7 +36,7 @@ class FuturePredictorAgentAdvantage(Agent):
         
         adv_reshape = tf.reshape(p_adv_fc, [-1, len(self.net_discrete_actions), self.target_dim])
         
-        pred_all_nomean = adv_reshape - tf.reduce_mean(adv_reshape, reduction_indices=1, keep_dims=True)
+        pred_all_nomean = adv_reshape - tf.reduce_mean(adv_reshape, reduction_indices=1, keepdims=True)
         pred_all = pred_all_nomean + tf.reshape(p_val_fc, [-1, 1, self.target_dim])
         pred_relevant = tf.boolean_mask(pred_all, tf.cast(input_actions, tf.bool))
         
